@@ -1,0 +1,823 @@
+* {
+  clear: both;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+h1 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* /* HEADER  */
+/* con :hover vao vao li  */
+span {
+  color: aqua;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+
+}
+
+.header__content {
+  display: flex;
+  padding: 15px 5px;
+  margin: 0 5px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.header__content nav ul {
+  list-style: none;
+  margin-right: 30px;
+}
+
+.header__content li a {
+  text-decoration: none;
+  color: white;
+  border-bottom: solid 2px white;
+  margin: auto 16px;
+  line-height: 5px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.header__content li a:hover {
+  color: aqua;
+  border-bottom: none;
+  transition: all 0.75s;
+}
+
+.header__content li a::after:hover {
+  content: "";
+  transition: all 0.5s;
+}
+
+.header__content li {
+  display: inline;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 0 3px;
+  padding: 0 5px;
+}
+
+.header__content p {
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 60px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+/*  carousel */
+/* con lam Slide cho Carousel */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  width: 100%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: white;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 60px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  transform: translateY(-250px);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 10px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dots {
+  transform: translateY(-100px);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: grey;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 1s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: black;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* ABOUT*/
+.about {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.about__icon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  padding: auto 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about__icon i {
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: bold;
+  width: 100px;
+  height: 100px;
+  line-height: 98px;
+  border: solid grey 1px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  padding: auto;
+}
+
+.about__icon i:hover {
+  color: white;
+  background-color:aqua;
+}
+
+.about__icon p {
+  color: grey;
+
+}
+
+.about__us {
+  text-align: center;
+
+}
+
+.about__us h2 {
+  color: aqua;
+  font-size: 30px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+/* NUMBER */
+.number {
+  margin-top: 20px;
+  width: 100%;
+  background-color: aqua;
+  letter-spacing: 1px;
+  padding: 70px auto;
+}
+
+.number__content {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+
+.number__content .numbers {
+  color: white;
+  font-size: 70px;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+}
+.number h1{
+  padding-top: 50px;
+}
+.number__content p {
+  margin: 5px 30px;
+}
+
+.counter {
+  color: white;
+  font-size: 60px;
+}
+
+/* BLOG */
+.blog {
+  width: 100%;
+  letter-spacing: 2px;
+  padding: 70px auto;
+}
+
+.blog__item {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 10px;
+  margin: 0 auto;
+
+}
+
+.blog__item img {
+  width: 100%;
+  margin-right: 10px;
+}
+
+.blog__item__1 img,
+.blog__item__2 img,
+.blog__item__3 img {
+  border-top: solid 4px lightseagreen;
+}
+
+.blog__item__4,
+.blog__item__6,
+.blog__item__5 {
+  background-color: rgba(153, 153, 153, 0.63);
+  padding: 20px;
+}
+
+.blogbtn {
+  background-color: #000;
+}
+
+.blogbtn a {
+  color: aqua;
+  padding: 5px 10px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.blogbtn:hover a {
+  color: white;
+  text-decoration: none;
+}
+
+.titleBlog a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  z-index: 100;
+}
+
+
+.modal-dialog {
+  position: relative;
+  transform: translateX(50%) translateY(-20%);
+}
+
+.modal-content {
+  position: relative;
+  transform: translateY(-50px) translateX(-30px);
+}
+
+.modal-header {
+  font-size: 2.6em;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
+  background-color: #00cdce;
+  padding: 10px 50px 10px 50px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.modal-header .close {
+  font-size: 2.5em;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 22px;
+  width: fit-content;
+}
+
+.img-responsive,
+.thumbnail>img,
+.thumbnail a>img,
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.modal-body p {
+  font-size: 15px;
+  color: #999;
+  text-align: left;
+  padding: 2em 2em 1em;
+  margin: 0 !important;
+  line-height: 2em;
+}
+
+.modal-backdrop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* GET MORE */
+.getMore {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.play {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 50%;
+}
+
+.banner-agileits-btm {
+  background: url(../images/video.jpg)no-repeat 0px 0px;
+  background-size: cover;
+  padding: 0;
+  text-align: center;
+}
+
+.moreButton {
+  margin: 11em 0em 0em;
+}
+
+.moreButton a {
+  padding: 16px 19px;
+  top: 10em;
+  left: 26.5em;
+  display: inline-block;
+  background-color: rgba(0, 255, 255, 0.26);
+  border-radius: 55%;
+  color: aqua;
+  outline: none;
+  transition: 0.5s all;
+}
+
+.moreButton span {
+  font-size: 35px;
+  top: 2px;
+}
+
+.fa fa-play-circle {
+  display: inline-block;
+  font-size: 8em;
+  text-rendering: auto;
+  border: solid 2px aqua;
+  border-radius: 50%;
+}
+
+.matter {
+  padding: 0em 5.5em;
+  background: #00cdce;
+}
+
+.matter h2 {
+  text-align: center;
+  margin: 1em 0 .5em;
+  font-size: 42px;
+  color: #000;
+}
+
+.some-text p {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #fff;
+  line-height: 2em;
+  text-align: center;
+}
+
+.some-text-one {
+  margin: 2em 0em 4em;
+  text-align: center;
+}
+
+.some-text-one a {
+  color: #00cdce;
+  font-size: 17px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border: 1px solid #000;
+  padding: 7px 18px;
+  background: #000;
+  outline: none;
+  display: inline-block;
+}
+
+.some-text-one a:hover {
+  color: white;
+}
+
+#small-dialog1 {
+  background: #fff;
+  padding: 2em;
+  text-align: left;
+  max-width: 500px;
+  margin: 40px auto;
+  position: relative;
+  text-align: center;
+}
+
+/* PORTFOLIO */
+.portfolio {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.portfolio .agile_gallery_grids {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px 10px;
+}
+
+.agile_gallery_grid {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.wthree_p_grid {
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0);
+  position: relative;
+  display: block;
+}
+
+.wthree_p_grid .agileinfo_content_wrap {
+  position: absolute;
+  top: 15px;
+  bottom: 0;
+  left: 20px;
+  right: 0;
+  width: 90%;
+  height: 90%;
+}
+
+.wthree_p_grid .agileits_content {
+  padding: 1.5em 4em;
+  background: rgba(0, 0, 0, .72);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.wthree_p_grid .agileits_content:hover {
+  opacity: 1;
+}
+
+.wthree_p_grid .agileits_content h3 {
+  font-size: 1.5em;
+  color: #00cdce;
+  text-transform: uppercase;
+  padding: 1.3em 1.2em;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  margin-bottom: 0.8em;
+}
+
+.agileits_content p {
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+
+
+/* SUBCRIBE */
+.subcribe {
+  text-align: center;
+  background-color: aqua;
+  width: 100%;
+  padding: 70px auto;
+  margin-top: 50px;
+}
+
+.subcribe__content {
+  padding-top: 30px;
+  width: 100%;
+  letter-spacing: 2px;
+  padding: 0 auto;
+  transform: translateX() translateY();
+}
+
+.subcribe p {
+  text-align: center;
+}
+
+.subcribe p {
+  color: white;
+}
+
+.email1 {
+  line-height: 40px;
+  width: 80%;
+  outline: none;
+  transform: translateX(80%);
+  border: none;
+  background-color: white;
+}
+
+.btn {
+  width: 30%;
+  line-height: 40px;
+  color: white;
+  font-size: 20px;
+  background-color: black;
+  transform: translateX(300%);
+  margin-bottom: 50px;
+  }
+
+.btn:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.788);
+  border: solid black 1px;
+}
+
+/* con hover vao Button  */
+/* AGENTS */
+.agents {
+  width: 100%;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+.agents__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  text-align: center;
+  padding-left: 80px;
+  grid-gap: 0 20px;
+}
+
+
+.agents__info__1,
+.agents__info__2,
+.agents__info__3,
+.agents__info__4 {
+  background-color: rgba(155, 137, 137, 0.79);
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.agents__content h4 {
+  font-weight: 600;
+  color: aqua;
+}
+
+.agents__content p,
+.agents__content i {
+  color: white;
+}
+
+.agents__content i {
+  border: 1px solid white;
+  padding: 5px 5px;
+  margin: auto 5px;
+}
+
+.agents__content #iface:hover {
+  background-color: blue;
+}
+
+.agents__content #itwit:hover {
+  background-color: lightskyblue;
+}
+
+.agents__content #iw:hover {
+  background-color: orangered;
+}
+
+/* KHi dc hover  vao */
+.item:hover h4 {
+  color: white;
+}
+
+/* MAP */
+iframe {
+  width: 100%;
+  height: 400px;
+}
+
+/* CONTACT */
+form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+  letter-spacing: 2px;
+}
+
+/* input: border-bottom: solid 2px #999; */
+.contact form input {
+  width: 90%;
+  font-size: 15px;
+  color: grey;
+  margin: 5px 10px 20px 70px;
+  border: none;
+  border-bottom: solid grey 2px;
+  background-color: rgba(128, 128, 128, 0.247);
+  padding: 15px 30px 15px 15px;
+  outline: none;
+
+}
+
+textarea {
+  font-size: 15px;
+  width: 90%;
+  height: 70%;
+  border: none;
+  border-bottom: grey solid 2px;
+  background-color: rgba(128, 128, 128, 0.247);
+  outline: none;
+}
+
+.submit {
+  letter-spacing: 1px;
+  width: 90%;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 13px 10px;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+}
+
+/* Khi dc hover/ focus vao */
+.contact input:hover,
+.contact textarea:hover {
+  border-bottom: solid black 2px;
+}
+
+.submit:hover {
+  color: black;
+  background-color: aqua;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  background-color: aqua;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+  font-size: 15px;
+}
+
+.Copyright {
+  width: 100%;
+  padding-left: 100px;
+  padding-top: 20px;
+  color: white;
+}
+
+.Copyright a {
+  color: red;
+  text-decoration: none;
+}
+
+.Copyright a:hover {
+  color: white;
+}
+
+.icons {
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.icons i {
+  color: white;
+  font-size: 15px;
+  border: white solid 1px;
+  padding: 10px;
+  margin: 10px
+}
+
+/* Khi dc HOVER vao */
+.icons a:hover i {
+  color: blue;
+}
+
+.icons a:hover #i3 {
+  color: orangered;
+}
+
+/* Nut Back tp stop */
+.backtotop {
+  /* Block de Set dc kich thuoc cua the */
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 80px;
+  color: aqua;
+  position: fixed;
+  right: 50px;
+  bottom: 30px;
+  /* An nut Backt o stop */
+  opacity: 0;
+  /* opacity: phan tu van con tren trang, chi lam mo.  */
+  /* visibility: hidden thi AN luon */
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
